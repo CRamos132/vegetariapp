@@ -14,8 +14,8 @@ const theme = {
 describe("App", () => {
   it("renders without crashing", () => {
     render(<ThemeProvider theme={theme}><Home /></ThemeProvider>);
-    // const text = screen.findByPlaceholderText('Teste')
+    const text = screen.getByTestId('title')
     // expect(text).toBeInTheDocument();
-    expect(screen.findByText('My page')).toBeInTheDocument()
+    expect(text).toBeInTheDocument()
   });
 });

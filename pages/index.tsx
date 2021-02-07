@@ -9,7 +9,7 @@ const Title = styled.h1`
 export default function Home() {
   return (
     <div>
-      <Title>My page</Title>
+      <Title data-testid="title">My page</Title>
       <input type='text' placeholder='Teste' />
     </div>
   )
