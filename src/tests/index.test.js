@@ -9,11 +9,17 @@ const theme = {
       primary: "#e1e1e6",
     },
   };
+
+export const TestThemeWrapper = ({children}) => {
+  return (
+    <ThemeProvider theme={theme}>{children}</ThemeProvider>
+  )
+}
   
 
 describe("App", () => {
   it("renders without crashing", () => {
-    render(<ThemeProvider theme={theme}><Home /></ThemeProvider>);
+    render(<TestThemeWrapper><Home /></TestThemeWrapper>);
     const text = screen.getByTestId('title')
     // expect(text).toBeInTheDocument();
     expect(text).toBeInTheDocument()
