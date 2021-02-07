@@ -7,6 +7,7 @@ interface ButtonProps {
     color?: string;
     icon?: string;
     iconAlt?: string;
+    onClick?: () => void;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -16,13 +17,20 @@ const Button: React.FC<ButtonProps> = ({
     color = 'white',
     icon,
     iconAlt,
+    onClick,
     ...properties
 }) => {
+    const handleClick = () => {
+        if(onClick){
+            onClick()
+        }
+    }
     return (
         <BtnInput
             type={type}
             backgroundColor={backgroundColor}
             color={color}
+            onClick={handleClick}
             {...properties}
         >
             {icon ? (
