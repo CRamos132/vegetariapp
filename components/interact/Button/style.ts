@@ -8,7 +8,7 @@ interface Props {
 const Button = styled.button<Props>`
     background-color: ${properties => properties.backgroundColor};
     color: ${properties => properties.color};
-    padding: 5px;
+    padding: 8px 16px;
     border: 1px solid ${properties => properties.backgroundColor};
     border-radius: 12px;
     min-width: 100px;

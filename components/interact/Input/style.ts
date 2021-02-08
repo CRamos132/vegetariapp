@@ -5,7 +5,7 @@ const Input = styled.input`
     border: solid 1px ${(props) => props.theme.colors.background};
     border-radius: 12px;
     font-size: 16px;
-    padding: 5px;
+    padding: 8px 16px;
 `
 const Label = styled.label`
     font-size: 18px;

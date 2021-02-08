@@ -4,14 +4,15 @@ import {Input as InputField, Label} from './style'
 interface InputProps {
     name: string;
     label: string;
-    type: string;
+    placeholder: string;
+    type?: string;
 }
 
-const Input: React.FC<InputProps> = ({name, label, type}) => {
+const Input: React.FC<InputProps> = ({name, label, placeholder, type = 'text'}) => {
     return (
         <div>
             <Label htmlFor={`input_${name}`}>{label}</Label>
-            <InputField type={type} name={name} id={`input_${name}`}/>
+            <InputField type={type} name={name} id={`input_${name}`} placeholder={placeholder}/>
         </div>
     )
 }

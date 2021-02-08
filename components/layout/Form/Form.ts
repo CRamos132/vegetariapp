@@ -10,4 +10,4 @@ const Form = styled.form`
     margin-top: 10vh;
 `
 
-export {Form}
+export default Form
