@@ -1,5 +1,5 @@
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import {TestThemeWrapper} from '../index.test'
+import {TestThemeWrapper} from '..'
 import Input from '../../../components/interact/Input/Input'
 
 const setup = () => {
