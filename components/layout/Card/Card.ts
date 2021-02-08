@@ -13,7 +13,8 @@ const enter = keyframes`
 
 const Card = styled.div`
     height: 200px;
-    width: 40vw;
+    width: 80%;
+    max-width: 400px;
     margin: 10px;
     animation: ${enter} 0.8s;
     opacity: 0;
